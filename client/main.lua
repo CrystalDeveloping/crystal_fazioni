@@ -19,7 +19,7 @@ AddEventHandler('esx:setJob', function(job)
 end)
 
 for k,v in pairs(Config.fazioni) do
-    iv v.blipenable then
+    if v.blipenable then
         local blip = AddBlipForCoord(v.blipcord[1], v.blipcord[2], v.blipcord[3])
         SetBlipSprite(blip, v.blip)
         SetBlipDisplay(blip, 4)
