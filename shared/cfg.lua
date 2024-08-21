@@ -3,6 +3,7 @@ Config = {}
 Config.fazioni = {
     police = {
         job = 'police',
+        blipenable = true
         blip = 60,
         blipScale = 1.0,
         blipColor = 3,
